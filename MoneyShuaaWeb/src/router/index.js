@@ -10,6 +10,9 @@ export default new Router({
     /*首页*/
     {path: '/index', name: 'index', component: (resolve => require(['../pages/index/index'], resolve))},
     {path: '/mainPage', name: 'mainPage', component: (resolve => require(['../pages/main/mainPage'], resolve))},
+    /*我要升级*/
+    {path: '/upgrade', name: 'upgrade', component: (resolve => require(['../pages/main/upgrade'], resolve))},
+    
     {path: '/sharePage', name: 'sharePage', component: (resolve => require(['../pages/share/sharePage'], resolve))},
     {path: '/minePage', name: 'minePage', component: (resolve => require(['../pages/mine/minePage'], resolve))},
     

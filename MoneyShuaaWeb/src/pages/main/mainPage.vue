@@ -61,7 +61,7 @@
           <img class="mainPage-table-item-right-arrow" src="../../assets/img/imgMain/more_ic@2x.png">
         </div>
       </div>
-      <div class="mainPage-table-item">
+      <div class="mainPage-table-item" @click="goUpgrade">
         <div class="mainPage-table-imageContainer">
           <img style="width: 0.48rem;height: 0.48rem;margin-left: 0.1rem;" src="../../assets/img/imgMain/home_wysj_ic@2x.png"/>
         </div>
@@ -132,6 +132,10 @@
     },
 
     methods: {
+    	/*我要升级*/
+    	goUpgrade() {
+    		this.$router.push({"name":"upgrade"})
+    	},
     },
 
   }
