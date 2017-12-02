@@ -12,7 +12,7 @@ export default new Router({
     {path: '/mainPage', name: 'mainPage', component: (resolve => require(['../pages/main/mainPage'], resolve))},
     {path: '/sharePage', name: 'sharePage', component: (resolve => require(['../pages/share/sharePage'], resolve))},
     {path: '/minePage', name: 'minePage', component: (resolve => require(['../pages/mine/minePage'], resolve))},
-    
+    {path: '/generalize', name: 'generalize', component: (resolve => require(['../pages/share/generalize'], resolve))},
 
     /*登录*/
     {path: '/login', name: 'login', component: (resolve => require(['../pages/user/login'], resolve))},

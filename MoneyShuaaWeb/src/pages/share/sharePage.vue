@@ -73,7 +73,7 @@
         <div class="sharepage-table-imageContainer">
           <img src="../../assets/img/imgShare/share_friends_ic.png"/>
         </div>
-        <div class="sharepage-table-item-right">
+        <div class="sharepage-table-item-right" @click="goGeneralize">
           <div class="f28">朋友圈推广文案</div>
           <img class="sharepage-table-item-right-arrow" src="../../assets/img/imgMain/more_ic@2x.png">
         </div>
@@ -109,6 +109,9 @@
     },
 
     methods: {
+    	goGeneralize(){
+    		this.$router.push({"name":"generalize"});	
+    	},
       shareAndInviteShow(show) {
         if (show) {
           this.shareToInvite = true;
