@@ -14,8 +14,14 @@ export default new Router({
     {path: '/upgrade', name: 'upgrade', component: (resolve => require(['../pages/main/upgrade'], resolve))},
     
     {path: '/sharePage', name: 'sharePage', component: (resolve => require(['../pages/share/sharePage'], resolve))},
-    {path: '/minePage', name: 'minePage', component: (resolve => require(['../pages/mine/minePage'], resolve))},
+    /*朋友圈推广文案*/
     {path: '/generalize', name: 'generalize', component: (resolve => require(['../pages/share/generalize'], resolve))},
+    
+    {path: '/minePage', name: 'minePage', component: (resolve => require(['../pages/mine/minePage'], resolve))},
+    
+    
+
+
 
     /*登录*/
     {path: '/login', name: 'login', component: (resolve => require(['../pages/user/login'], resolve))},
